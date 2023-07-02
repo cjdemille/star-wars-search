@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Template</title>
+    <meta name="author" content="C.J. DeMille">
+    <meta name="description" content="brief description">
+
+    <!-- Open Graph Protocol -->
+    <!-- 
+    <meta property = "og:title" content ="Title">
+    <meta property = "og:type" content ="website">
+    <meta property = "og:image" content ="og-img.png"> 
+    <meta property = "og:url" content ="https://">
+
+    <meta property = "og:description" content ="brief description">
+    <meta property = "og:locale" content = "en_US">
+    <meta property = "og:site_name" content = "Site Name"> 
+    -->
+
+    <!-- Icons -->
+    <!-- 
+    <link rel="icon" href = "/favicon.ico">
+    <link rel="icon" href = "/favicon.svg" type="image/svg+sml"> 
+    <link rel = "apple-touch-icon" href="/apple-touch-icon.png">
+    -->
+
+    <!-- Fonts -->
+    <!-- Links to font files go here -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Star Wars Search</h1>
+        <nav>
+            <!-- Website navigation goes here. No links to outside sites. -->
+        </nav>
+    </header>
+    <main>
+        <form action="GET" id="searchForm">
+            <select name="type" id="type">
+                <option value="films">Films</option>
+                <option value="people">People</option>
+                <option value="planets">Planets</option>
+                <option value="species">Species</option>
+                <option value="starships">Starships</option>
+                <option value="vehicles">Vehicles</option>
+            </select>
+            <input type="text" placeholder="keyword" name="query">
+            <button>Search</button>
+        </form>
+        <section id="SearchResults">
+
+        </section>
+    </main>
+    <footer>
+        <!-- Add copyright notices and other footer content here. -->
+    </footer>
+
+
+    <!-- JavaScript files  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
